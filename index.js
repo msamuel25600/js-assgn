@@ -91,3 +91,17 @@ function square(array) {
   }
   return squareNo;
 }
+
+function joinArray(array1, array2) {
+  let newArray = [];
+  const len1 = array1.length;
+  const len2 = array2.length;
+  for (let i = 0; i < len1; i++) {
+    for (let j = 0; j < len2; j++) {
+      if (array1[i] === array2[j]) {
+        newArray.push(array1[i]);
+      }
+    }
+  }
+  return newArray;
+}
